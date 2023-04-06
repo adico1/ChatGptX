@@ -1,15 +1,16 @@
 import React from 'react';
-import logo from '../../assets/img/logo.svg';
-import './Newtab.css';
-import './Newtab.scss';
+import logo from '../../../assets/img/logo.svg';
+import Greetings from '../../containers/Greetings/Greetings';
+import './Popup.css';
 
-const Newtab = () => {
+const Popup = () => {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <Greetings />
         <p>
-          Edit <code>src/pages/Newtab/Newtab.js</code> and save to reload.
+          Edit <code>src/ui/pages/Popup/Popup.jsx</code> and save to reload.
         </p>
         <a
           className="App-link"
@@ -19,10 +20,9 @@ const Newtab = () => {
         >
           Learn React!
         </a>
-        <h6>The color of this paragraph is defined using SASS.</h6>
       </header>
     </div>
   );
 };
 
-export default Newtab;
+export default Popup;
